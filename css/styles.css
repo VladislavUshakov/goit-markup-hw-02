@@ -1,24 +1,27 @@
 :root {
-    --main-text-color: #212121;
-    --secondary-text-color: #757575;
-    --selection-text-color: #2196F3;
-    --main-background-color: #FFFFFF;
-    --secondary-background-color: #F5F4FA;
-    --footer-background-color: #2F303A;
+    --primary-light-color: #FFFFFF;
+    --secondary-light-color: #F5F4FA;
+    --third-light-color: #757575;
+    --primary-dark-color: #000000;
+    --secondary-dark-color: #2F303A;
+    --primary-text-color: #212121;
+    --primary-active-color: #2196F3;
+    --secondary-active-color: #188CE8;
 }
 
 body {
-    color: var(--main-text-color);
+    color: var(--primary-text-color);
     font-family: 'Roboto', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     line-height: 1.17;
     letter-spacing: 0.03em;
 }
 
-/* Logo */
 
+/* Logo */
 .logo {
-    color: var(--main-text-color);
+    color: var(--primary-active-color);
     text-decoration: none;
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
@@ -26,45 +29,172 @@ body {
     line-height: 1.19;
 }
 
-.logo .excerpt {
-    color: var(--selection-text-color);
+.page-header .excerpt {
+    color: var(--primary-dark-color);
 }
 
-/* Buttons */
+.page-footer .excerpt {
+    color: var(--primary-light-color);
+}
 
+
+/* Button */
 .button {
+    color: var(--primary-text-color);
+    background-color: var(--secondary-light-color);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+
     cursor: pointer;
+    border: none;
 }
 
-/* Lists */
+.hero .button {
+    color: var(--primary-light-color);
+    background-color: var(--primary-active-color);
 
+    font-weight: 700;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+}
+
+.hero .button:hover, 
+.hero .button:focus {
+    background-color: var(--secondary-active-color);
+}
+
+.portfolio .button:hover,
+.portfolio .button:focus {
+    color: var(--primary-light-color);
+    background-color: var(--primary-active-color);
+}
+
+
+/* List */
 .list {
     list-style-type: none;
 }
 
-/* Links */
 
+/* Link */
 .link {
     text-decoration: none;
 }
 
-/* Header */
 
-.header .link {
+/* Title */
+.title {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+
+/* Header */
+.page-header .link {
     color: inherit;
     font-weight: 500;
     letter-spacing: 0.02em;
 }
 
-.header .link:hover,
-.header .link:focus {
-    color: var(--selection-text-color);
+.page-header .link:hover,
+.page-header .link:focus {
+    color: var(--primary-active-color);
 }
 
-.header .header-link {
-    color: var(--secondary-text-color);
+.page-header .header-link {
+    color: var(--third-light-color);
 }
 
-.header .active-link {
-    color: var(--selection-text-color);
+.page-header .active {
+    color: var(--primary-active-color);
 }
+
+
+/* Hero */
+.hero {
+    background-color: var(--secondary-dark-color);
+}
+
+.hero .title {
+    color: var(--primary-light-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+
+
+/* Quality */
+.quality .subtitle {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.quality .text {
+    color: var(--third-light-color);
+    line-height: 1.71;
+}
+
+
+/* Team */
+.team {
+    background-color: var(--secondary-light-color);
+}
+
+.team .list {
+    font-size: 16px;
+    line-height: 1.19;
+}
+
+.team .subtitle {
+    font-weight: 500;
+}
+
+.team .text {
+    color: var(--third-light-color);
+}
+
+
+/* Portfolio */
+.portfolio .title {
+    text-align: left;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.portfolio .text {
+    color: var(--third-light-color);
+    font-size: 16px;
+    line-height: 1.88;
+}
+
+
+/* Footer */
+.page-footer {
+    background-color:  var(--secondary-dark-color);
+}
+
+.page-footer .link {
+    color: rgba(255, 255, 255, .6);
+    font-style: normal;
+    line-height: 1.71
+}
+
+.page-footer .link:hover,
+.page-footer .link:focus {
+    color: var(--primary-active-color);
+}
+
+.page-footer .map {
+    color: var(--primary-light-color);
+}
+
+
+
+
